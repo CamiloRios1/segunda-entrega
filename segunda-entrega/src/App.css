@@ -1,18 +1,163 @@
+
+ html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+  font-style: none;
+  text-decoration: none;
+  list-style: none;
+
+} 
+
+li {
+  text-decoration: none !important;
+}
+
+
+
+
+
 header
 {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row;
-  top:0;
-}
-.nav1{
-  display: flex;
-  gap: 2vh;
+  justify-content:space-between;
+  flex-direction: row;  
+  background-color: #F2620F75;
+
 }
 
-.hero{
+body{
+  background: radial-gradient(circle at center right, #F2B70525, #F2054445);
+  height: 100vh;
+}
+
+li {
+  list-style: none; /* Quitar viñetas de la lista */
+  text-decoration: none; /* Quitar subrayado */
+}
+
+.nav1{
+
+  display: flex;
+  gap: 2vh;
+  text-decoration:double;
+  list-style: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 2.5vh;
+  color: white;
+
+  :hover{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3vh;
+  }
+}
+
+
+.cardonacion{
+  display: flex;
+  flex-direction: row;
+  width: 1vh;
+  gap:2rem;
+
+  button{
+    font-size: 10vh;
+  }
+  
+}
+
+p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 2vh;
+}
+
+h3{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 2vh;
+}
+h2{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 3vh;
+}
+
+
+.inicio{
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
+  flex-direction: column;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 3vh;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.product-card {
+  width: 24vh; 
+  margin-left: 2vh;
+}
+
+.itemcount {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 32px;
+  /* Estilos para el contador de ítems */
+}
+.agregaralcarrito {
+  display: flex;
+  align-items: center;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 32px;
+}
+.agregaralcarrito{
+  gap: 2rem;
+  font-size: 24px;
+}
+
+.add-to-cart-container button {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 24px;
+}
+
+.carritodecompra{
+  background-color: transparent;
+  border: none;
+}
+
+.gatodepie{
+  width: 30%;
+}
+
+.logoheader{
+  width: 25%;
+  margin: 1rem;
+  background-color: transparent;
+  border: 0;
+
+}
+
+.listcontainer{
+  display: flex;
+  flex-direction: column;
 }

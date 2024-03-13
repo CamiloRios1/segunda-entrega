@@ -1,13 +1,19 @@
 import './App.css'
 import Navbar from './Componentes/Navbar/Navbar'
 import ItemListContainer from './Componentes/ItemListContainer/ItemListContainer'
+import ItemCount from './Componentes/ItemCount/ItemCount'
 
 function App() {
   
 return(
   <>
     <Navbar />
-    <ItemListContainer greeting={'Adopta un gato'}/>
+
+    <body className='inicio'>
+
+    <ItemListContainer />
+    
+    </body>
   </>
 )
 
