@@ -1,34 +1,22 @@
-import React, { useState, useEffect } from "react";
-import { gatoProducts } from "../../asyncMock";
-import ItemList from "../ItemList/ItemList";
-
+import React, { useState } from 'react';
+import { gatoProducts } from '../../asyncMock';
+import ItemList from '../ItemList/ItemList';
 
 const ItemListContainer = ({ saludo }) => {
-    const [productos, setProductos] = useState([]);
-    const [loading, setLoading] = useState(true);
+  const [productos, setProductos] = useState(gatoProducts);
 
-    useEffect(() => {
+  // Manejador de clics para el botón "Ver detalle"
+  const handleItemClick = (productId) => {
+    // Lógica para mostrar los detalles del producto seleccionado
+    console.log('Producto seleccionado:', productId);
+  };
 
-        // Simulando una llamada asíncrona para cargar los productos
-        setTimeout(() => {
-            setProductos(gatoProducts);
-            setLoading(false);
-        }, 1000); // Simulamos una carga 
-    }, []);
-
-    return (
-        <main className="Itemlistcontainerbody">
-            <h1>{saludo}</h1>
-
-            {loading ? (
-                <p>Cargando productos...</p>
-
-            ) : (
-
-                <ItemList gatoProducts={productos} />
-            )}
-        </main>
-    );
+  return (
+    <main className="Itemlistcontainerbody">
+      <h1>{saludo}</h1>
+      <ItemList products={productos} onItemClick={handleItemClick} />
+    </main>
+  );
 };
 
 export default ItemListContainer;

@@ -12,7 +12,6 @@ const Navbar =()=>{
         <div>
             <nav className="Navheader">
                 <li><a href="#home">Tienda</a></li>
-                <li><a href="#gatos">Gatitos</a></li>
                 <li><a href="#adopcion">Adopción</a></li>
                 <li><a href="#apadrinamiento">Apadrinamiento</a></li>
                 <li><a href="#donacion">Donación</a></li>

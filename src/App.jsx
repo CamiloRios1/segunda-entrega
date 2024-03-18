@@ -6,10 +6,11 @@ import ItemCount from './components/ItemCount/ItemCount';
 import ItemList from './components/ItemList/ItemList';
 import ItemDetail from './components/ItemDetail/ItemDetail'; // Importa ItemDetail
 import { gatoProducts } from './asyncMock';
+import Footer from './components/Footer/Footer'
 
 function App() {
   // Simular un ID específico de producto para mostrar en el ItemDetail
-  const productIdToShow = 1; // Cambia esto al ID del producto que deseas mostrar
+  const productIdToShow = 2; // Cambia esto al ID del producto que deseas mostrar
 
   // Filtrar el producto específico por su ID
   const productToShow = gatoProducts.find(product => product.id === productIdToShow);
@@ -27,6 +28,9 @@ function App() {
         {/* Renderizar el componente ItemDetail con el producto específico */}
         <ItemDetail product={productToShow} />
       </article>
+
+      {/* Aqui dejaremos el footer */}
+      <Footer />
     </>
   );
 }

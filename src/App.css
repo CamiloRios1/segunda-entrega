@@ -9,6 +9,14 @@ background-color: #C9472090;
 top: 0;
 }
 
+footer{
+  background-color: #C9472090;
+  color: antiquewhite;
+}
+
+.social-icons{
+  min-width: 3vh;
+}
 
 .logoheader{
   max-width: 7vh;
